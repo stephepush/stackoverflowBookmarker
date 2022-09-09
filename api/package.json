@@ -1,0 +1,22 @@
+{
+  "name": "sobookmarkbinder",
+  "version": "1.0.0",
+  "description": "A web app that stores stackoverflow bookmarks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephepush/stackoverflowBookmarker.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Stephen Peters",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephepush/stackoverflowBookmarker/issues"
+  },
+  "homepage": "https://github.com/stephepush/stackoverflowBookmarker#readme"
+}
