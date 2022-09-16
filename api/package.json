@@ -18,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/stephepush/stackoverflowBookmarker/issues"
   },
-  "homepage": "https://github.com/stephepush/stackoverflowBookmarker#readme"
+  "homepage": "https://github.com/stephepush/stackoverflowBookmarker#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "pg": "^8.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
 }
