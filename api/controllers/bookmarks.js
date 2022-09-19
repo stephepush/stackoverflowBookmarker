@@ -1,3 +1,5 @@
+const { hashesString } = require('../lib/stringHashUtils');
+
 exports.getBookmarks = (req, res, next) => {
     res.status(200).json({bookmark: "aol.com"})
 }
