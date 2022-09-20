@@ -6,7 +6,7 @@ exports.getBookmarks = (req, res, next) => {
 
 
 exports.postBookmark = (req, res, next) => {
-    const url = req.body.title;
+    const url = req.body.bookmark;
     let urlHash = hashesString(url);
     //console.log(urlHash)
     res.status(201).json({

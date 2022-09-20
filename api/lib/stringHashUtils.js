@@ -1,9 +1,11 @@
-const crypto = require('crypto');
+const { createHash } = require('crypto');
 
-module.exports = hashesString = (string) => {
+function hashesString(string) {
     const hash = createHash('sha1')
     //hash.update(string);
     // console.log(hash.copy().digest('hex'));
     console.log(hash.update(string).digest('hex'));
     //return hash.update(string).digest('hex');
 } 
+
+module.exports.hashesString = hashesString 
