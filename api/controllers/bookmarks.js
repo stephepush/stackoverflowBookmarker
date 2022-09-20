@@ -6,12 +6,13 @@ exports.getBookmarks = (req, res, next) => {
 
 
 exports.postBookmark = (req, res, next) => {
-    const title = req.body.title;
-    const content =  req.body.content;
+    const url = req.body.title;
+    let urlHash = hashesString(url);
+    //console.log(urlHash)
     res.status(201).json({
         message: 'Post created successfully'
         //post: {}
     })
-    console.log(req)
+    //console.log(req)
 }
 
