@@ -1,5 +1,7 @@
 const firebaseAuth = require('./firebase');
-getAuth()
+
+
+firebaseAuth.getAuth()
   .getUser(uid)
   .then((userRecord) => {
     // See the UserRecord reference doc for the contents of userRecord.
