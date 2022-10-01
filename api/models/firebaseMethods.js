@@ -53,7 +53,7 @@ getAuth()
 
 
   
-  const listAllUsers = (nextPageToken) {
+  const listAllUsers = (nextPageToken) => {
   // List batch of users, 1000 at a time.
   getAuth()
     .listUsers(1000, nextPageToken)
