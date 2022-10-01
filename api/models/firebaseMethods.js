@@ -53,7 +53,7 @@ getAuth()
 
 
   
-  firebaseAuth.listAllUsers(nextPageToken) {
+  const listAllUsers = (nextPageToken) {
   // List batch of users, 1000 at a time.
   getAuth()
     .listUsers(1000, nextPageToken)
@@ -69,6 +69,8 @@ getAuth()
     .catch((error) => {
       console.log('Error listing users:', error);
     });
-}
+};
+
+firebaseAuth.listAllUsers(nextPageToken)
   // Start listing users from the beginning, 1000 at a time.
   //listAllUsers();
