@@ -1,7 +1,16 @@
 import dotenv from "dotenv"
 import express from "express"
 
+
+
 dotenv.config()
+
+//const admin = require("firebase-admin");
+
+const serviceAccount = require(process.env.SERVICE_ACCOUNT_FILEPATH);
+
+
+//const analytics = getAnalytics(app);
 
 const bookmarkRoutes = require('./routes/bookmarks')
 
