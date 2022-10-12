@@ -44,6 +44,10 @@ firebaseAuth.getAuth()
     console.log('Error creating new user:', error);
   });
 
+  console.log(firebaseAuth.getAuth().createUser(    {uid: 'some-uid',
+  email: 'user@example.com',
+  phoneNumber: '+11234567890'}))
+
   firebaseAuth.getAuth()
   .deleteUser(uid)
   .then(() => {
