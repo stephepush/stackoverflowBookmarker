@@ -1,3 +1,8 @@
 import { credentials } from '../models/firebase';
-import { admin } from 'firebase-admin';
+import { getAuth, UserRecord } from 'firebase-admin/auth';
 
+const auth = getAuth();
+
+exports.createUser = auth.createUser({
+    
+})
