@@ -1,24 +1,25 @@
-import dotenv from "dotenv"
-import { admin} from 'firebase-admin';
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+//import dotenv from "dotenv"
+import { initializeApp, App } from 'firebase-admin/app';
+import { AppCheck } from 'firebase-admin/app-check';
 
-dotenv.config()
+//dotenv.config()
 
-const admin = require("firebase-admin");
+//const admin = require("firebase-admin");
 
 const serviceAccount = require(process.env.SERVICE_ACCOUNT_FILEPATH);
 
 //console.log(serviceAccount)
 
-const credentials = admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
+const credentials = initializeApp({
+  serviceAccount
+  //credential: admin.credential.cert(serviceAccount),
   //databaseURL: 'https://<DATABASE_NAME>.firebaseio.com'
 
 });
 
-const app = initializeApp(firebaseConfig);
 
-const analytics = getAnalytics(app);
+//const app = initializeApp(firebaseConfig);
 
-module.exports = credentials, analytics;
+//const analytics = getAnalytics(app);
+
+module.exports = credentials;
