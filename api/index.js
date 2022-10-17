@@ -1,5 +1,7 @@
 import dotenv from "dotenv"
 import express from "express"
+//const { initializeApp } = require('firebase-admin/app');
+
 
 
 
@@ -13,6 +15,7 @@ const serviceAccount = require(process.env.SERVICE_ACCOUNT_FILEPATH);
 //const analytics = getAnalytics(app);
 
 const bookmarkRoutes = require('./routes/bookmarks')
+const firebaseTestRoutes = require('./routes/fireBaseAuthTestRoutes')
 
 
 
@@ -29,5 +32,6 @@ app.use((req, res, next) => {
 })
 
 app.use(bookmarkRoutes)
+app.use(firebaseTestRoutes)
 
 app.listen(8080);
